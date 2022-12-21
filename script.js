@@ -13,8 +13,7 @@ function checkPalindrome(){
 
 function isPalindrome(str){
     str = str.toLowerCase();
-    const checkStr = reverser(str);
-    return (str === checkStr);
+    return (str === reverser(str));
 }
 
 function reverseString(){

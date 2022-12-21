@@ -28,9 +28,9 @@ function reverser(str){
 
 function getCount(){
     // get value from input to str and c and then call countChar(str,c)
-    resCalcSpan.innerHTML = `<b>${countChar(stringValueInput.value, characterValueInput.value)}</b>`;
+    resCalcSpan.innerHTML = countChar(stringValueInput.value, characterValueInput.value);
 }
 
 function countChar(str,c){
-    return str.split(c).length - 1;
+    return (str === '' || c === '') ? 0 : str.split(c).length - 1;
 }

@@ -1,0 +1,22 @@
+Implements 3 methods:
+1. isPalindrome(str);
+    The method should return true if string is polindrome and false if is not. The method must be case insensitive 
+
+    Examples:
+    "aba" -> true
+    "abcd" -> false
+    "aa aa" -> true
+    "Abba" -> true
+    "  Abba  " -> true
+
+2. reverseString(str)
+The method takes a string and returns a new string, which will be the reverse of the incoming string.
+
+Example:
+"mama" -> "amam"
+"Hello world" -> "dlrow olleH"
+
+3. countChar(str, c)
+The method counts and prints to the console how many times the transmitted character occurs in the specified string
+Example:
+"Hello world", 'l' -> 3 

@@ -7,17 +7,15 @@ const characterValueInput = document.getElementById('character_value');
 const resCalcSpan = document.getElementById('res_calc');
 
 function checkPalindrome(){
-    // get value from input to str and then call isPalindrome(str)
     palindromeResSpan.innerHTML = `<b>${isPalindrome(palindromeInput.value)}</b>`;
 }
 
 function isPalindrome(str){
-    str = str.toLowerCase();
+    str = str.trim().toLowerCase();
     return (str === reverser(str));
 }
 
 function reverseString(){
-    // get value from input to str and then call reverseString(str)
     reverseResultSpan.innerHTML = `<b>${reverser(reverseInput.value)}</b>`;
 }
 
@@ -26,10 +24,9 @@ function reverser(str){
 }
 
 function getCount(){
-    // get value from input to str and c and then call countChar(str,c)
     resCalcSpan.innerHTML = countChar(stringValueInput.value, characterValueInput.value);
 }
 
-function countChar(str,c){
+function countChar(str, c){
     return (str === '' || c === '') ? 0 : str.split(c).length - 1;
 }
